@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  background-color: #17181f;
+  color: #ddd;
+}
+
+main {
+  max-width: 450px;
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
+}
+
+h1 span {
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: top;
+  margin-top: 6px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #30313d;
+  color: #ddd;
+
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+form input[type="datetime-local"] {
+  color: #777;
+}
+
+form div.basic {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+form button {
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ddd;
+}
+
+div.transactions {
+  margin-top: 10px;
+}
+
+div.transaction {
+  border-top: 1px solid #30313d;
+  display: flex;
+  padding: 5px 0;
+
+  justify-content: space-between;
+}
+
+div.transaction:first-child {
+  border-top: 0;
+}
+
+div.transaction div.name {
+  font-size: 1rem;
+}
+
+div.transaction div.description {
+  font-size: 0.7rem;
+  color: #888;
+}
+
+div.right {
+  text-align: right;
+}
+
+div.left {
+}
+
+div.price.green {
+  color: #1c1;
+}
+
+div.price.red {
+  color: #c11;
+}
+
+div.transaction div.datetime {
+  font-size: 0.7rem;
+  color: #888;
+}
